@@ -14,6 +14,7 @@
 		F1F8CC0B1AB2F8B0001B9552 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8CC0A1AB2F8B0001B9552 /* Images.xcassets */; };
 		F1F8CC0E1AB2F8B0001B9552 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F8CC0C1AB2F8B0001B9552 /* LaunchScreen.xib */; };
 		F1F8CC1A1AB2F8B0001B9552 /* VanadisCocoaComponentsLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8CC191AB2F8B0001B9552 /* VanadisCocoaComponentsLoginTests.m */; };
+		F1F8CC241AB3034B001B9552 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8CC231AB3034B001B9552 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F1F8CC131AB2F8B0001B9552 /* VanadisCocoaComponentsLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanadisCocoaComponentsLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8CC181AB2F8B0001B9552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F8CC191AB2F8B0001B9552 /* VanadisCocoaComponentsLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanadisCocoaComponentsLoginTests.m; sourceTree = "<group>"; };
+		F1F8CC231AB3034B001B9552 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = ../Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		F1F8CBFC1AB2F8B0001B9552 /* VanadisCocoaComponentsLogin */ = {
 			isa = PBXGroup;
 			children = (
+				F1F8CC231AB3034B001B9552 /* Login.storyboard */,
 				F1F8CC011AB2F8B0001B9552 /* AppDelegate.h */,
 				F1F8CC021AB2F8B0001B9552 /* AppDelegate.m */,
 				F1F8CC041AB2F8B0001B9552 /* ViewController.h */,
@@ -202,6 +205,7 @@
 				F1F8CC091AB2F8B0001B9552 /* Main.storyboard in Resources */,
 				F1F8CC0E1AB2F8B0001B9552 /* LaunchScreen.xib in Resources */,
 				F1F8CC0B1AB2F8B0001B9552 /* Images.xcassets in Resources */,
+				F1F8CC241AB3034B001B9552 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
