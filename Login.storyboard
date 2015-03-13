@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoStart" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-J6-37l">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-J6-37l">
                                 <rect key="frame" x="35" y="40" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="cT3-di-KMx"/>
@@ -245,7 +245,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoStart" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-70-GA7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-70-GA7">
                                 <rect key="frame" x="35" y="84" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="bbh-cR-Kwq"/>
@@ -579,7 +579,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoStart" translatesAutoresizingMaskIntoConstraints="NO" id="Blv-R1-GBN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Blv-R1-GBN">
                                 <rect key="frame" x="35" y="82" width="250" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Rso-7c-Jen"/>
@@ -802,7 +802,6 @@
     <resources>
         <image name="Checkbox_0" width="30" height="30"/>
         <image name="Email" width="26" height="26"/>
-        <image name="LogoStart" width="290" height="68"/>
         <image name="NavBarSearch" width="22" height="22"/>
         <image name="Password" width="26" height="26"/>
     </resources>
