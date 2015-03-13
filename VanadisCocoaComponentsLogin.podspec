@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
 
+s.platform     = :ios, "7.0"
 s.name = 'VanadisCocoaComponentsLogin'
 
 s.version = '0.0.1'
