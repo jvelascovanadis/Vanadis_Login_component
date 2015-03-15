@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
 s.platform     = :ios, "7.0"
 s.name = 'VanadisCocoaComponentsLogin'
 
-s.version = '0.0.1'
+s.version = '0.0.2'
 
 s.summary = 'Componente de Login y registro de Vanadis'
 
-s.homepage = 'https://vanadis.es'
+s.homepage = 'http://vanadis.es'
 
 s.license = {
 
