@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.platform     = :ios, "7.0"
 s.name = 'VanadisCocoaComponentsLogin'
 
-s.version = '0.0.2'
+s.version = '0.0.3'
 
 s.summary = 'Componente de Login y registro de Vanadis'
 
@@ -28,7 +28,7 @@ s.source = {
 }
 
 s.source_files = 'VanadisCocoaComponentsLogin/*.{m,h}'
-
+s.resources = ["Resources/**/*.storyboard"]
 s.requires_arc = true
 
 end
