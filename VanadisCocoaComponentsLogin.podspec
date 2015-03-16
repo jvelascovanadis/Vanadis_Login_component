@@ -31,4 +31,6 @@ s.source_files = 'VanadisCocoaComponentsLogin/*.{m,h}'
 s.resources = '*.{storyboard}'
 s.requires_arc = true
 
+s.dependency 'AFNetworking', '~> 1.0'
+
 end
