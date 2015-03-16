@@ -28,7 +28,7 @@ s.source = {
 }
 
 s.source_files = 'VanadisCocoaComponentsLogin/*.{m,h}'
-#s.resources = ["VanadisCocoaComponentsLogin/*.storyboard"]
+s.resources = 'VanadisCocoaComponentsLogin/*.{storyboard}'
 s.requires_arc = true
 
 end
