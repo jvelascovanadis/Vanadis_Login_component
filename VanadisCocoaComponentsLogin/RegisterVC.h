@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIActivityIndicatorView+AFNetworking.h"
 #import "UIAlertView+AFNetworking.h"
-#import "User.h"
+//#import "User.h"
 
 #define OFFSET_KEYBOARD 135.0
 #define Appearence_speed_keyBoard 0.75f
