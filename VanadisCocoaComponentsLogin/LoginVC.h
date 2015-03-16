@@ -11,7 +11,7 @@
 //#import "SlideMenuController.h"
 //#import "TutorialVC.h"
 
-#import "UIActivityIndicatorView+AFNetworking.h"
+//#import "UIActivityIndicatorView+AFNetworking.h"
 
 #define OFFSET_KEYBOARD 65.0
 #define Appearence_speed_keyBoard 0.75f

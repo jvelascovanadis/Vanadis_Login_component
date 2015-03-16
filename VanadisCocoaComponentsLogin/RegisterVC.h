@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIActivityIndicatorView+AFNetworking.h"
-#import "UIAlertView+AFNetworking.h"
+//#import "UIActivityIndicatorView+AFNetworking.h"
+//#import "UIAlertView+AFNetworking.h"
 //#import "User.h"
 
 #define OFFSET_KEYBOARD 135.0
