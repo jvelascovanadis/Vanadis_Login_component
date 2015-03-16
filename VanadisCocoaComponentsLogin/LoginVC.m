@@ -39,7 +39,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-       self.menu =[[SlideMenuController alloc]initWithType:VanadisSlideMenuType_LAUNCH_MANUALLY];
+    //   self.menu =[[SlideMenuController alloc]initWithType:VanadisSlideMenuType_LAUNCH_MANUALLY];
     
      [self.navigationItem setRightBarButtonItems:[self createNavRightBarButtons] animated:YES];
     //self.menu =[[SlideMenuController alloc]initWithType:VanadisSlideMenuType_LAUNCH_ON_START];
@@ -76,19 +76,19 @@
     
     
    //1.- Try to retrieve 
-  User * userLogged = [User returnUserLogged];
-    
-    if (userLogged != nil)
-    {
-        self.TF_mail.text = userLogged.user_email;
-        self.TF_password.text = userLogged.user_password;
-        
-        email = self.TF_mail.text;
-        password = self.TF_password.text;
-        
-        [self login];
-        
-    }
+//  User * userLogged = [User returnUserLogged];
+//    
+//    if (userLogged != nil)
+//    {
+//        self.TF_mail.text = userLogged.user_email;
+//        self.TF_password.text = userLogged.user_password;
+//        
+//        email = self.TF_mail.text;
+//        password = self.TF_password.text;
+//        
+//        [self login];
+//        
+//    }
     
 }
 
@@ -127,92 +127,92 @@
 
 - (void)login
 {
-    
-    NSURLSessionTask *task = [User post_login:email psw:password completion:^(User *infoLogin, NSError *error) {
-        
-        if (!error)
-        {
-            //1.- Search the user in the dataBase to know if we have it on the database
-            User *myInfo =  [User findUser:infoLogin.user_email];
-            
-            
-            if (myInfo == nil)
-            {
-                // First delete other users isLogged field
-                User * userLastLogged = [User returnUserLogged];
-                [userLastLogged updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:0] forKey:USER_IS_LOGGED_FIELD]];
-
-                //2.- The user is new, save in database
-                [infoLogin save];
-                //2.1 Update 
-                
-            }else
-            {
-                //3. User already created on database. Just update isLogged fieldç
-                User * userLastLogged = [User returnUserLogged];
-                [userLastLogged updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:0] forKey:USER_IS_LOGGED_FIELD]];
-                
-                [myInfo updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:1] forKey:USER_IS_LOGGED_FIELD]];
-            }
-            
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            
-            if ([defaults boolForKey:@"alreadyLaunched"] == FALSE){
-                
-                UINavigationController *theInitialViewController = (UINavigationController *)[[UIStoryboard storyboardWithName:@"Tutorial" bundle:nil] instantiateInitialViewController];
-
-                TutorialVC * tutoVC = [[theInitialViewController viewControllers]objectAtIndex:0];
-                tutoVC.delegate = self;
-                [tutoVC setTypeTutorial:TutorialTypeIntro];
-                
-                [self presentViewController:theInitialViewController animated:YES completion:^{
-                    
-                    [defaults setBool:TRUE forKey:@"alreadyLaunched"];
-                    [defaults synchronize];
-                    
-                    
-                }];
-                
-            }else
-            {
-                [self.menu loadSlideMenu];
-            }
-            
-
-            
-        }else
-        {
-            
-            if ([[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:UNAUTHORIZED_DESCRIPTION] || [[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:UNAUTHORIZED_DESCRIPTION_ES])
-            {
-                UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LOGIN_ERROR",nil)
-                                                             message:[NSString stringWithFormat:NSLocalizedString(@"INFO_LOGIN_ERROR",nil)] delegate:nil
-                                                   cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
-                
-                [av show];
-            }
-            else
-            {
-
-            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                            message:[error localizedDescription]
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"Ok"
-                                                  otherButtonTitles:nil, nil];
-            
-            [alert show];
-            }
-
-        }
-        
-    }];
-
-    UIActivityIndicatorView *act = [self getUIActivityViewInNavigationBar];
-    if (act!=nil)
-    {
-        [act setAnimatingWithStateOfTask:task];
-    }
-
+//    
+//    NSURLSessionTask *task = [User post_login:email psw:password completion:^(User *infoLogin, NSError *error) {
+//        
+//        if (!error)
+//        {
+//            //1.- Search the user in the dataBase to know if we have it on the database
+//            User *myInfo =  [User findUser:infoLogin.user_email];
+//            
+//            
+//            if (myInfo == nil)
+//            {
+//                // First delete other users isLogged field
+//                User * userLastLogged = [User returnUserLogged];
+//                [userLastLogged updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:0] forKey:USER_IS_LOGGED_FIELD]];
+//
+//                //2.- The user is new, save in database
+//                [infoLogin save];
+//                //2.1 Update 
+//                
+//            }else
+//            {
+//                //3. User already created on database. Just update isLogged fieldç
+//                User * userLastLogged = [User returnUserLogged];
+//                [userLastLogged updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:0] forKey:USER_IS_LOGGED_FIELD]];
+//                
+//                [myInfo updateWithInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:1] forKey:USER_IS_LOGGED_FIELD]];
+//            }
+//            
+//            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//            
+//            if ([defaults boolForKey:@"alreadyLaunched"] == FALSE){
+//                
+//                UINavigationController *theInitialViewController = (UINavigationController *)[[UIStoryboard storyboardWithName:@"Tutorial" bundle:nil] instantiateInitialViewController];
+//
+//                TutorialVC * tutoVC = [[theInitialViewController viewControllers]objectAtIndex:0];
+//                tutoVC.delegate = self;
+//                [tutoVC setTypeTutorial:TutorialTypeIntro];
+//                
+//                [self presentViewController:theInitialViewController animated:YES completion:^{
+//                    
+//                    [defaults setBool:TRUE forKey:@"alreadyLaunched"];
+//                    [defaults synchronize];
+//                    
+//                    
+//                }];
+//                
+//            }else
+//            {
+//                [self.menu loadSlideMenu];
+//            }
+//            
+//
+//            
+//        }else
+//        {
+//            
+//            if ([[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:UNAUTHORIZED_DESCRIPTION] || [[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:UNAUTHORIZED_DESCRIPTION_ES])
+//            {
+//                UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LOGIN_ERROR",nil)
+//                                                             message:[NSString stringWithFormat:NSLocalizedString(@"INFO_LOGIN_ERROR",nil)] delegate:nil
+//                                                   cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
+//                
+//                [av show];
+//            }
+//            else
+//            {
+//
+//            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error"
+//                                                            message:[error localizedDescription]
+//                                                           delegate:nil
+//                                                  cancelButtonTitle:@"Ok"
+//                                                  otherButtonTitles:nil, nil];
+//            
+//            [alert show];
+//            }
+//
+//        }
+//        
+//    }];
+//
+//    UIActivityIndicatorView *act = [self getUIActivityViewInNavigationBar];
+//    if (act!=nil)
+//    {
+//        [act setAnimatingWithStateOfTask:task];
+//    }
+//
 }
 
 //- (void)login {
@@ -339,8 +339,8 @@
 #pragma mark - TutorialVCDelegate
 - (void)TutorialVCDidClose
 {
-    [self.menu loadSlideMenu];
-    [self.menu shouldDisplayInitiallyLateralMenu];
+  //  [self.menu loadSlideMenu];
+   // [self.menu shouldDisplayInitiallyLateralMenu];
 }
 
 #pragma mark - Navigation

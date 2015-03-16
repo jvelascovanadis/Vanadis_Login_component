@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <VanadisFrameworkSlideMenu/SlideMenuControl.h>
-#import "SlideMenuController.h"
-#import "TutorialVC.h"
+//#import <VanadisFrameworkSlideMenu/SlideMenuControl.h>
+//#import "SlideMenuController.h"
+//#import "TutorialVC.h"
 
 #import "UIActivityIndicatorView+AFNetworking.h"
 
@@ -22,7 +22,7 @@
     NSString *password;
 }
 
-@property (strong, nonatomic) SlideMenuController *menu;
+//@property (strong, nonatomic) SlideMenuController *menu;
 @property (strong, nonatomic) IBOutlet UITextField *TF_password;
 @property (strong, nonatomic) IBOutlet UITextField *TF_mail;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;

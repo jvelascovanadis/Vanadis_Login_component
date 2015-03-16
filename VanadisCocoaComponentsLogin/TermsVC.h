@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <VanadisFrameworkSlideMenu/SlideMenuControl.h>
-#import "SlideMenuController.h"
+//#import <VanadisFrameworkSlideMenu/SlideMenuControl.h>
+//#import "SlideMenuController.h"
 
 @protocol TermsVCDelegate <NSObject>
 - (void)termsDidAccepted;
@@ -18,7 +18,7 @@
 @interface TermsVC : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *legalTermsTextView;
 
-@property (strong, nonatomic) SlideMenuController *menu;
+//@property (strong, nonatomic) SlideMenuController *menu;
 //For a delegate, use assign. That way, you’ll avoid a “retain cycle”. (A retain cycle is bad.)
 @property(nonatomic, assign) id<TermsVCDelegate> delegate;
 

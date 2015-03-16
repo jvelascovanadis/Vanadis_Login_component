@@ -104,7 +104,7 @@
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:NSLocalizedString(@"legal_resource", nil) ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     
-    self.legalTermsTextView.attributedText =[NSMutableAttributedString vanadisHTMLAttributtedString:htmlString color:[UIColor ocrWalletGrayMediumAColor] size:12.0f];
+   // self.legalTermsTextView.attributedText =[NSMutableAttributedString vanadisHTMLAttributtedString:htmlString color:[UIColor ocrWalletGrayMediumAColor] size:12.0f];
 }
 
 /*

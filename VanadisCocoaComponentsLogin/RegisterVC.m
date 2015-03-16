@@ -74,51 +74,51 @@
 
 - (IBAction)registerButton:(id)sender
 {
-    if([self checkRegisterFields])
-    {
-        _loadingView.hidden = NO;
-   
-          NSURLSessionTask *task = [User post_register:login psw:password repeatPsw:repeat_password completion:^(User *infoRegister, NSError * error) {
-            if (!error) {
-                    self.TF_mail.text = @"";
-                    self.TF_password.text = @"";
-                    self.TF_repeat_password.text = @"";
-                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"REGISTER_INFO",nil)
-                                    message:[NSString stringWithFormat:NSLocalizedString(@"REGISTER_SUCCESS",nil)] delegate:nil
-                                    cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
-                    [av show];
-                
-                    [self.navigationController popViewControllerAnimated:TRUE];
-            } else{
-//                if ([[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:BAD_REQUEST_DESCRIPTION] || [[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:BAD_REQUEST_DESCRIPTION_ES])
-//                {
+//    if([self checkRegisterFields])
+//    {
+//        _loadingView.hidden = NO;
+//   
+//          NSURLSessionTask *task = [User post_register:login psw:password repeatPsw:repeat_password completion:^(User *infoRegister, NSError * error) {
+//            if (!error) {
+//                    self.TF_mail.text = @"";
+//                    self.TF_password.text = @"";
+//                    self.TF_repeat_password.text = @"";
 //                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"REGISTER_INFO",nil)
-//                                message:[NSString stringWithFormat:NSLocalizedString(@"DUPLICATE_EMAILS",nil)] delegate:nil
-//                                cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
-//                                    
+//                                    message:[NSString stringWithFormat:NSLocalizedString(@"REGISTER_SUCCESS",nil)] delegate:nil
+//                                    cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
 //                    [av show];
-//                }
-//                else
-//                {
-//             
-//            
-//                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"REGISTER_INFO",nil)
-//                                message:[NSString stringWithFormat:NSLocalizedString(@"REGISTER_ERROR",nil)] delegate:nil
-//                                cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
-//                                    [av show];
-//                }
-            }
-        
-              _loadingView.hidden = YES;
-        }];
-    //    [activityIndicator setAnimatingWithStateOfTask:task];
-        UIActivityIndicatorView *act = [self getUIActivityViewInNavigationBar];
-        if (act!=nil)
-        {
-            [act setAnimatingWithStateOfTask:task];
-        }
-
-    }
+//                
+//                    [self.navigationController popViewControllerAnimated:TRUE];
+//            } else{
+////                if ([[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:BAD_REQUEST_DESCRIPTION] || [[error.userInfo objectForKey:@"NSLocalizedDescription"]isEqualToString:BAD_REQUEST_DESCRIPTION_ES])
+////                {
+////                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"REGISTER_INFO",nil)
+////                                message:[NSString stringWithFormat:NSLocalizedString(@"DUPLICATE_EMAILS",nil)] delegate:nil
+////                                cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
+////                                    
+////                    [av show];
+////                }
+////                else
+////                {
+////             
+////            
+////                    UIAlertView *av = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"REGISTER_INFO",nil)
+////                                message:[NSString stringWithFormat:NSLocalizedString(@"REGISTER_ERROR",nil)] delegate:nil
+////                                cancelButtonTitle:NSLocalizedString(@"RESPONSE_OK",nil) otherButtonTitles:nil];
+////                                    [av show];
+////                }
+//            }
+//        
+//              _loadingView.hidden = YES;
+//        }];
+//    //    [activityIndicator setAnimatingWithStateOfTask:task];
+//        UIActivityIndicatorView *act = [self getUIActivityViewInNavigationBar];
+//        if (act!=nil)
+//        {
+//            [act setAnimatingWithStateOfTask:task];
+//        }
+//
+//    }
 }
 
 - (BOOL) checkRegisterFields
