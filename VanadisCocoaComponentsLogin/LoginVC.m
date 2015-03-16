@@ -7,7 +7,7 @@
 //
 
 #import "LoginVC.h"
-#import "User.h"
+//#import "User.h"
 
 #define UNAUTHORIZED_DESCRIPTION @"Request failed: unauthorized (401)"
 #define UNAUTHORIZED_DESCRIPTION_ES @"Request failed: sin autorización (401)"

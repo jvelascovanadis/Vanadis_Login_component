@@ -16,7 +16,8 @@
 #define OFFSET_KEYBOARD 65.0
 #define Appearence_speed_keyBoard 0.75f
 
-@interface LoginVC : UIViewController<UITextFieldDelegate,TutorialVCDelegate>
+//@interface LoginVC : UIViewController<UITextFieldDelegate,TutorialVCDelegate>
+@interface LoginVC : UIViewController<UITextFieldDelegate>
 {
     NSString *email;
     NSString *password;
