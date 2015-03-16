@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1727CC71AB6FA440008E855 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1727CC61AB6FA440008E855 /* LoginVC.m */; };
+		F1727CCC1AB6FA4F0008E855 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1727CC91AB6FA4F0008E855 /* RegisterVC.m */; };
+		F1727CCD1AB6FA4F0008E855 /* TermsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1727CCB1AB6FA4F0008E855 /* TermsVC.m */; };
+		F1727CD01AB6FA570008E855 /* RememberPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1727CCF1AB6FA570008E855 /* RememberPasswordVC.m */; };
 		F1F8CC001AB2F8B0001B9552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8CBFF1AB2F8B0001B9552 /* main.m */; };
 		F1F8CC031AB2F8B0001B9552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8CC021AB2F8B0001B9552 /* AppDelegate.m */; };
 		F1F8CC061AB2F8B0001B9552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8CC051AB2F8B0001B9552 /* ViewController.m */; };
@@ -28,6 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1727CC51AB6FA440008E855 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		F1727CC61AB6FA440008E855 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		F1727CC81AB6FA4F0008E855 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		F1727CC91AB6FA4F0008E855 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		F1727CCA1AB6FA4F0008E855 /* TermsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsVC.h; sourceTree = "<group>"; };
+		F1727CCB1AB6FA4F0008E855 /* TermsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsVC.m; sourceTree = "<group>"; };
+		F1727CCE1AB6FA570008E855 /* RememberPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RememberPasswordVC.h; sourceTree = "<group>"; };
+		F1727CCF1AB6FA570008E855 /* RememberPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RememberPasswordVC.m; sourceTree = "<group>"; };
 		F1F8CBFA1AB2F8B0001B9552 /* VanadisCocoaComponentsLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanadisCocoaComponentsLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8CBFE1AB2F8B0001B9552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F8CBFF1AB2F8B0001B9552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +95,14 @@
 		F1F8CBFC1AB2F8B0001B9552 /* VanadisCocoaComponentsLogin */ = {
 			isa = PBXGroup;
 			children = (
+				F1727CCE1AB6FA570008E855 /* RememberPasswordVC.h */,
+				F1727CCF1AB6FA570008E855 /* RememberPasswordVC.m */,
+				F1727CC81AB6FA4F0008E855 /* RegisterVC.h */,
+				F1727CC91AB6FA4F0008E855 /* RegisterVC.m */,
+				F1727CCA1AB6FA4F0008E855 /* TermsVC.h */,
+				F1727CCB1AB6FA4F0008E855 /* TermsVC.m */,
+				F1727CC51AB6FA440008E855 /* LoginVC.h */,
+				F1727CC61AB6FA440008E855 /* LoginVC.m */,
 				F1F8CC231AB3034B001B9552 /* Login.storyboard */,
 				F1F8CC011AB2F8B0001B9552 /* AppDelegate.h */,
 				F1F8CC021AB2F8B0001B9552 /* AppDelegate.m */,
@@ -223,8 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1727CCD1AB6FA4F0008E855 /* TermsVC.m in Sources */,
 				F1F8CC061AB2F8B0001B9552 /* ViewController.m in Sources */,
 				F1F8CC031AB2F8B0001B9552 /* AppDelegate.m in Sources */,
+				F1727CCC1AB6FA4F0008E855 /* RegisterVC.m in Sources */,
+				F1727CD01AB6FA570008E855 /* RememberPasswordVC.m in Sources */,
+				F1727CC71AB6FA440008E855 /* LoginVC.m in Sources */,
 				F1F8CC001AB2F8B0001B9552 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +444,7 @@
 				F1F8CC1F1AB2F8B0001B9552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F8CC201AB2F8B0001B9552 /* Build configuration list for PBXNativeTarget "VanadisCocoaComponentsLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				F1F8CC221AB2F8B0001B9552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
