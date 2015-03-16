@@ -30,7 +30,8 @@ s.source = {
 s.source_files = 'VanadisCocoaComponentsLogin/*.{m,h}'
 #s.resources = '*.{storyboard}'
 #s.resource_bundle = { 'StandardUtils' => [ '*.{png,storyboard,lproj}' ]}
-s.resource_bundle = { 'StandardUtils' => [ 'StandardUtilsBundle/**/*.{png,storyboard,lproj}' ] }
+#s.resource_bundle = { 'StandardUtils' => [ 'StandardUtilsBundle/**/*.{png,storyboard,lproj}' ] }
+s.resource_bundle = { 'VanadisCocoaComponentsLogin' => '*.storyboard' }
 s.requires_arc = true
 
 #s.dependency 'AFNetworking', '~> 1.0'
