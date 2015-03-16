@@ -7,7 +7,7 @@
 //
 
 #import "TermsVC.h"
-#import "SlideMenuController.h"
+//#import "SlideMenuController.h"
 
 
 @interface TermsVC ()

@@ -49,10 +49,10 @@
 
 - (void)sendRememberPassword
 {
-    [User post_remember_password:emailTextField.text completion:^(NSError *error) {
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }];
+//    [User post_remember_password:emailTextField.text completion:^(NSError *error) {
+//        
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }];
     
     
 }
